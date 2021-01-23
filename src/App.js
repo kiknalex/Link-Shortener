@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './styles.css'
+import Header from './components/Header'
+import WelcomeSection from './components/WelcomeSection'
+import Description from "./components/Description"
+import Footer from "./components/Footer"
+import LinkShortener from "./components/LinkShortener"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div className="container">
+    <div className="header-welcome">
+  <Header /> 
+  <WelcomeSection />
+  </div>
+  <LinkShortener />
+  <Description />
+
+
+
+
+
+  </div>
+    <Footer />
+    <div className="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aleksandre Kiknadze</a>.
+  </div>
     </div>
+  
+    
   );
 }
 
